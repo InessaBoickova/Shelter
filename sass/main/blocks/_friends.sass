@@ -1,0 +1,112 @@
+.friends
+    padding: 5rem 0 2.2rem 0
+    background: #F6F6F6
+    position: relative
+    .container
+        display: flex
+        flex-direction: column
+    &_title
+        text-align: center
+        @include subtitle
+    &_slider
+        margin-top: 3.5rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_list
+        padding: 0 4.5rem 0 4.5rem
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+    &_button
+        padding-bottom: 3px
+        margin-top: 6px
+        height: 3.25rem
+        width: 3.25rem
+        background: #fff
+        border-color: #F1CDB3
+        border-radius: 6.25rem
+        text-align: center
+        cursor: pointer
+        border-style: solid
+        transition: 0.1s
+        outline: none
+        &:hover
+            border-color: #FDDCC4
+            background: #FDDCC4
+    &_arrow
+        margin: -0.56rem 1.06rem
+        display: block
+        &:active
+            color: #CDCDCD
+    &_wrapper
+        margin: 0px -1.25rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding-bottom: 1.87rem
+        max-width: 16.8rem
+        height: 27.18rem
+        background: #FAFAFA
+        border-radius: 0.56rem
+        cursor: pointer
+        transition: 0.2s
+        &:hover
+            transform: scale(1.05)
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+    &_img
+        display: block
+    &_subtitle
+        margin-left: 2px
+        margin-top: 2rem
+        margin-bottom: 2.1rem
+        font-family: $font_georgia
+        font-weight: 400
+        font-size: 1.25rem
+        line-height: 1.43rem
+        text-align: center
+        letter-spacing: 0.06em
+        color: #545454
+    &_bts
+        padding: 6px 0 6px 1px
+        width: 11.56rem
+        height: 3.25rem
+        background: #fff
+        border-radius: 6.25rem
+        font-family: $font_georgia
+        font-weight: 400
+        font-size: 1.06rem
+        text-align: center
+        letter-spacing: 0.06em
+        color: #292929
+        padding-top: 5px
+        border-color: #F1CDB3
+        border-style: solid
+        cursor: pointer
+        transition: 0.1s
+        outline: none
+        &:hover
+            background: #FDDCC4
+            border-color: #FDDCC4
+    &_main_btn
+        font-family: $font_georgia
+        font-weight: 400
+        font-size: 1.06rem
+        line-height: 130%
+        letter-spacing: 0.06em
+        color: #292929
+        align-self: center
+        margin: 4rem auto
+        width: 16.3rem
+        height: 3.25rem
+        background: #F1CDB3
+        border-radius: 6.25rem
+        border: 0
+        cursor: pointer
+        transition: 0.1s
+        outline: none
+        &:hover
+            background: #FDDCC4
