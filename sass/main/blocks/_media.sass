@@ -55,7 +55,7 @@
         &_list
             padding: 0
             display: flex
-            justify-content: space-around
+            justify-content: space-evenly
             & div:nth-child(1)
                 margin-right: 16px
         &_slider
@@ -131,6 +131,7 @@
 @media screen and (max-width: 767px)
     .header
         .hamburger
+            top: 39px
             margin-left: -25px
             display: block
             position: absolute
@@ -145,7 +146,7 @@
         &_wrapper
             margin-left: -24px
         &_title
-            margin-bottom: 0.3em
+            margin: 20.2px 0 0.3em 0
         &_subtitle
         &_nav
             display: none
@@ -157,19 +158,20 @@
         &_title
             width: 250px
             font-size: 1.7rem
-            line-height: 120%
-            letter-spacing: 0.02em
+            line-height: 118%
+            letter-spacing: 0.018em
             text-align: center
         &_subtitle
             font-size: 15px
             font-family: Georgia
             line-height: 160%
             text-align: center
+            margin-bottom: 2.62rem
         &_img
-            margin-top: 13px
+            margin-top: 14px
             margin-left: 40px
             height: 272px
-            width: 100%
+            width: 260px
     .about
         padding: 2.6rem 0 2.4rem 0
         &_descr
@@ -221,7 +223,7 @@
             align-items: center
             padding: 0 3.3rem 0 2.9rem
         &_main_btn
-            margin: 2.64rem auto
+            margin: 2.63rem auto
     .help
         padding: 2.6rem 0px 2.6rem
         &_title
@@ -241,7 +243,7 @@
         &_icon
             height: 50px
     .addition
-        padding: 2.7rem 0 2rem 0
+        padding: 2.7rem 0 2.64rem 0
         &_img
             margin-top: 2.8rem
             width: 81%
@@ -256,13 +258,13 @@
             line-height: 130%
             text-align: center
         &_subtitle
-            margin-top: 1.3rem
+            margin-top: 1.2rem
             font-family: $font_arial
             font-size: 15px
             line-height: 160%
             letter-spacing: 0
         &_number
-            margin-top: 1.19rem
+            margin-top: 1.25rem
             width: 281px
             height: 43px
         &_link
@@ -302,7 +304,5 @@
             margin-top: 0.85rem
         &_img
             margin-top: 1.7rem
-            img
-                height: 269px
-                width: 100%
+            height: 269px
             
