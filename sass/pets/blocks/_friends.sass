@@ -1,5 +1,5 @@
 .friends
-    padding: 5.04rem 0 2.4rem 0
+    padding: 5.04rem 0 2.5rem 0
     background: #F6F6F6
     &_title
         font-family: Georgia
@@ -12,15 +12,13 @@
         text-align: center
     &_list
         margin-top: 3.75rem
-        display: flex
-        flex-direction: column
-        justify-content: space-between
+        display: grid
+        gap: 30px 40px
+        grid-template-columns: repeat(4, 270px)
+        grid-template-rows: repeat(2 , 435px)
+        grid-auto-row: 435px
     &_mt
         margin-top: 1.875rem
-    &_box
-        display: flex
-        justify-content: space-between
-        align-items: center
     &_wrapper
         max-width: 16.9rem
         max-height: 27.2rem
