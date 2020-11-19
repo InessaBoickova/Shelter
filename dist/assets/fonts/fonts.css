@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Arial';
+    font-display:swap;
+    src: url(assets/fonts/arial.ttf) format('ttf');
+    font-style:normal;
+  }
+  
+  @font-face {
+    font-family: 'Georgia';
+    font-display:swap;
+    src: url(assets/fonts/georgia.ttf) format('ttf');
+    font-style:normal;
+  }
+  
