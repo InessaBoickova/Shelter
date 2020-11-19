@@ -3,13 +3,26 @@
         max-width: 100%
     .header
         &_wrapper
-            margin-top: 0.62rem
-            justify-content: space-around
-        &_title
-            margin-bottom: 0.5rem
-        &_nav
-            margin-left: 1.19rem
-
-
+            padding: 30px
 
 @media screen and (max-width: 767px)
+    body
+        max-width: 100%
+    .header
+        .hamburger
+            top: 49px
+            margin-left: -14px
+            display: block
+            position: absolute
+            height: 20px
+            width: 30px
+            span
+                display: block
+                margin-bottom: 8px
+                height: 2px
+                width: 100%
+                background-color: #000000
+        &_wrapper
+            padding: 30px 69px 0 10px
+        &_nav
+            display: none
