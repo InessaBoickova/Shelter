@@ -2,8 +2,22 @@
     body
         max-width: 100%
     .header
+        padding-bottom: 30px
         &_wrapper
             padding: 30px
+    .friends
+        &_list
+            margin-top: 30px
+            grid-template-columns: repeat(2, 270px)
+            grid-template-rows: repeat(3 , 435px)
+            grid-auto-row: 435px
+            justify-content: center
+            & div:nth-child(7)
+                display: none
+            & div:nth-child(8)
+                display: none
+        &_button
+            margin-top: 40px
 
 @media screen and (max-width: 767px)
     body
@@ -26,3 +40,20 @@
             padding: 30px 69px 0 10px
         &_nav
             display: none
+    .friends
+        padding: 42px 0 42px 0 
+        &_title
+            font-size: 25px
+        &_list
+            margin-top: 42px
+            grid-template-columns: repeat(1, 270px)
+            justify-content: center
+            & div:nth-child(4)
+                display: none
+            & div:nth-child(5)
+                display: none
+            & div:nth-child(6)
+                display: none
+        &_button
+            margin-top: 43px
+            width: 18.7rem
