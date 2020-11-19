@@ -2,34 +2,48 @@
     body
         max-width: 100%
     .header
-        padding-bottom: 30px
         &_wrapper
-            padding: 30px
+            padding: 1.875rem
     .friends
+        padding: 5.04rem 0 1rem 0
         &_list
-            margin-top: 30px
-            grid-template-columns: repeat(2, 270px)
-            grid-template-rows: repeat(3 , 435px)
-            grid-auto-row: 435px
+            margin-top: 1.875rem
+            grid-template-columns: repeat(2, 16.875rem)
+            grid-template-rows: repeat(3 , 27.19rem)
+            grid-auto-row: 27.19rem
             justify-content: center
             & div:nth-child(7)
                 display: none
             & div:nth-child(8)
                 display: none
         &_button
-            margin-top: 40px
-
+            margin-top: 2.5rem
+    .footer
+        padding-top: 0.8rem 
+        .container
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &_questions
+            margin-right: 3.7rem
+            margin-top: 1.1rem
+        &_img
+            margin-top: 4.125rem
+        &_icon
+            margin-right: 1.26rem
 @media screen and (max-width: 767px)
     body
         max-width: 100%
     .header
+        padding-bottom: 1.875rem
         .hamburger
-            top: 49px
-            margin-left: -14px
+            top: 3.06rem
+            margin-left: -0.875rem
             display: block
             position: absolute
-            height: 20px
-            width: 30px
+            height: 1.25rem
+            width: 1.875rem
             span
                 display: block
                 margin-bottom: 8px
@@ -37,16 +51,16 @@
                 width: 100%
                 background-color: #000000
         &_wrapper
-            padding: 30px 69px 0 10px
+            padding: 1.875rem 4.312rem 0 0.625rem
         &_nav
             display: none
     .friends
-        padding: 42px 0 42px 0 
+        padding: 2.625rem 0  
         &_title
-            font-size: 25px
+            font-size: 1.562rem
         &_list
-            margin-top: 42px
-            grid-template-columns: repeat(1, 270px)
+            margin-top: 2.625rem
+            grid-template-columns: repeat(1, 16.875rem)
             justify-content: center
             & div:nth-child(4)
                 display: none
@@ -55,5 +69,41 @@
             & div:nth-child(6)
                 display: none
         &_button
-            margin-top: 43px
+            margin-top: 2.687rem
+            margin-bottom: 0
             width: 18.7rem
+    .footer
+        &_wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        &_questions
+            margin-right: 0
+        &_title
+            font-size: 1.562rem
+            text-align: center
+        &_block
+            margin-left: 0.81rem   
+        &_phone
+            margin-left: 7px
+
+        &_visit
+            margin-top: 2.062rem
+            margin-bottom: 2.5rem
+            display: flex
+            flex-direction: column
+            justify-content: center
+           
+        &_header
+            font-size: 1.562rem
+            width: 15.625rem
+            text-align: center
+            margin: 0 auto
+        &_block_visit
+            margin-top: 2.5rem
+        &_img
+            margin-top: -6px
+            width: 81%
+            height: 16.812rem
+           
