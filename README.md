@@ -1,1 +1,1 @@
-https://inessaboickova.github.io/Shelter/
+https://inessaboickova.github.io/Shelter/dist/
