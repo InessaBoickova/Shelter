@@ -1,0 +1,79 @@
+.modal
+    display: flex
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 10
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background: rgba(41, 41, 41, 0.6)
+    &_dialog
+        width: 900px
+        min-height: 500px
+        background: #FAFAFA
+        margin: auto
+    &_content
+        padding: 50px 20px 89px 30px
+        height: 100%
+        width: 100%
+        display: flex
+        justify-content: space-between
+        img
+            width: 400px
+            height: 400px
+            object-fit: cover
+    &_descr
+        width: 400px
+        padding-right: 50px
+        h2
+            font-family: Georgia
+            font-weight: normal
+            font-size: 35px
+            line-height: 130%
+            letter-spacing: 0.06em
+        h3
+            margin-top: 10px
+            font-family: Georgia
+            font-size: 20px
+            letter-spacing: 0.06em
+            color: #000000
+        p
+            margin-top: 40px
+            margin-bottom: 40px
+            font-family: Georgia
+            font-size: 15px
+            line-height: 110%
+            letter-spacing: 0.06em
+        li
+            padding-left: 13px
+            position: relative
+            font-family: Georgia
+            font-size: 15px
+            line-height: 110%
+            letter-spacing: 0.06em
+            margin-bottom: 11px
+            list-style-type: none
+            span
+                font-weight: bold
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                top: 5px
+                left: -1px
+                height: 4px
+                width: 4px
+                background: #F1CDB3
+                border-radius: 100%
+    &_close
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 52px
+        height: 52px
+        right: 250px
+        top: 70px
+        border: 2px solid #F1CDB3
+        border-radius: 100px
