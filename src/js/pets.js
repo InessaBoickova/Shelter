@@ -5,23 +5,32 @@ window.addEventListener('DOMContentLoaded', function() {
     // hamburger
 
     const hamburger = document.querySelector('.hamburger'),
-    menu = document.querySelector('.menu'),
-    closeBtn = document.querySelector('.close');
+          menu = document.querySelector('.menu'),
+          closeBtn = document.querySelector('.close');
 
     hamburger.addEventListener('click',() =>{
-    menu.classList.add('menu_active');
+        menu.classList.add('menu_active');
     });
     closeBtn.addEventListener('click',() =>{
-     menu.classList.remove('menu_active');
+        menu.classList.remove('menu_active');
     });
 
     // modal
 
     const btns = document.querySelectorAll('.friends_btn'),
-        modal = document.querySelector('.modal'),
-        close = document.querySelector('.modal_close'),
-        element = document.createElement('div');
+         modal = document.querySelector('.modal'),
+         close = document.querySelector('.modal_close'),
+         element = document.createElement('div');
 
+    function openModal (){
+        modal.classList.remove('hide');
+        modal.classList.add('show');
+    }
+    
+    function closeModal(){
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+    }
 
     close.addEventListener('click', closeModal);
 
@@ -65,15 +74,7 @@ window.addEventListener('DOMContentLoaded', function() {
             openModal();
         }
     }
-    function openModal (){
-        modal.classList.remove('hide');
-        modal.classList.add('show');
-    }
-
-    function closeModal(){
-        modal.classList.add('hide');
-        modal.classList.remove('show');
-    }
+    
 
     let handler = function() {
         let index = Array.prototype.indexOf.call(btns, this);
