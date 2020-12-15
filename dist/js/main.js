@@ -175,14 +175,14 @@ window.addEventListener('DOMContentLoaded', function() {
     const  wrapper = document.querySelector('.feedback_dialog'),
            feedbackWindow = document.querySelector('.feedback'),
            feedbackClose = document.querySelector('.feedback_close'),
-           btn = document.querySelector('.only_btn');
+           btn = document.querySelectorAll('.btn');
 
-
-    btn.addEventListener('click', () => {
-        openFeedback();
+    btn.forEach(i=>{
+        i.addEventListener('click', openFeedback);
     });
+    
 
-    feedbackClose.addEventListener('click', closeFeedback());
+    feedbackClose.addEventListener('click', closeFeedback);
     
     feedbackWindow.addEventListener('click', (e)=>{
         if(e.target == feedbackWindow || e.target.getAttribute('data-close') == ''){
@@ -205,14 +205,13 @@ window.addEventListener('DOMContentLoaded', function() {
     function createFeedbackModal (){
         element.innerHTML = `
             <form action="#">
-                <div class="feedback_title">Мы свяжемся с вами как можно быстрее!</div>
-                <input required placeholder="Ваше имя" name="name" type="text" class="feedback_input">
-                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="feedback_input">
-                <button class="feedback_btn">Перезвонить мне</button>
+                <div class="feedback_title">We will contact you as soon as possible!</div>
+                <input required placeholder="Your name" name="name" type="text" class="feedback_input">
+                <input required placeholder="Your phone number" name="phone" type="phone" class="feedback_input">
+                <button class="feedback_btn">Сall me back</button>
             </form>
         `;
         wrapper.append(element);
         element.classList.add('feedback_content');
     }
-
 });
