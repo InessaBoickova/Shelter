@@ -1,18 +1,16 @@
 .footer
     padding-top: 2.56rem
-    background: url(../../assets/icons/noise_transparent.svg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20
+    background: url(../../assets/icons/noise_transparent@2x.svg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20
     .container
         display: flex
         justify-content: space-between
     &_wrapper
         display: flex
-
     &_questions
-        margin-right: 10rem
-        width: 17.43rem
-        margin-top: 1.05rem
         display: flex
         flex-direction: column
+        margin: 1.05rem 10rem 0 0
+        width: 17.43rem
     &_title
         font-family: $font_georgia
         font-weight: 400
@@ -21,6 +19,8 @@
         letter-spacing: 0.06em
         color: #FFFFFF
     &_email
+        display: flex
+        align-items: center
         font-family: $font_georgia
         font-weight: 400
         font-size: 1.25rem
@@ -28,9 +28,9 @@
         letter-spacing: 0.06em
         color: #F1CDB3
         text-decoration: none
-        display: flex
-        align-items: center
     &_phone
+        display: flex
+        align-items: center
         font-family: $font_georgia
         font-weight: 400
         font-size: 1.25rem
@@ -38,8 +38,6 @@
         letter-spacing: 0.06em
         color: #F1CDB3
         text-decoration: none
-        display: flex
-        align-items: center
     &_header
         font-family: $font_georgia
         font-weight: 400
@@ -48,23 +46,23 @@
         letter-spacing: 0.06em
         color: #FFFFFF
     &_block
-        margin-top: 2.67rem
         display: flex
         flex-wrap: nowrap
         align-items: center
         text-align: center
+        margin-top: 2.67rem
         &_visit
-            margin-top: 2.1rem
             display: flex
             align-items: center
             flex-wrap: nowrap
+            margin-top: 2.1rem
     &_icon
         display: flex
         margin-right: 1.18rem
     &_link
         display: flex
         align-items: center
-        font-family: Georgia
+        font-family: $font_georgia
         font-weight: 400
         font-size: 1.25rem
         line-height: 115%
@@ -72,6 +70,6 @@
         color: #F1CDB3
         text-decoration: none
     &_visit
+        margin-top: 1.05rem
         width: 18.87rem
         height: 14.62rem
-        margin-top: 1.05rem

@@ -14,10 +14,10 @@
         right: 0
         visibility: visible
     .close
+        display: flex
         position: absolute
         left: 14.98rem
         top: 2.81rem
-        display: flex
         cursor: pointer
         span
             display: block
@@ -37,8 +37,7 @@
         letter-spacing: 0.06em
         color: #F1CDB3
     &_subtitle
-        margin-left: 4px
-        margin-top: 10px
+        margin-left: 10px 0 0 4px
         font-family: $font_arial
         font-weight: normal
         font-size: 0.812rem
@@ -46,14 +45,14 @@
         letter-spacing: 0.1em
         color: #FFFFFF
     &_nav
-        padding: 0 1.25rem 0 1.25rem
-        margin-top: 3rem
         display: flex
         flex-direction: column
+        padding: 0 1.25rem 0 1.25rem
+        margin-top: 3rem
         transition: 0.1s
         text-align: center
         list-style-type: none
-        & li:nth-child(1)
+        & li:nth-child(2)
             &::after
                 content: ''
                 display: block

@@ -2,6 +2,16 @@
 
 window.addEventListener('DOMContentLoaded', function() {
 
+    function openModal (i){
+        i.classList.remove('hide');
+        i.classList.add('show');
+    }
+    
+    function closeModal(i){
+        i.classList.add('hide');
+        i.classList.remove('show');
+    }
+
 // hamburger
 
 
@@ -23,22 +33,12 @@ window.addEventListener('DOMContentLoaded', function() {
           close = document.querySelector('.modal_close'),
           element = document.createElement('div');
 
-    function openModal (){
-        modal.classList.remove('hide');
-        modal.classList.add('show');
-    }
-    
-    function closeModal(){
-        modal.classList.add('hide');
-        modal.classList.remove('show');
-    }
-
-    close.addEventListener('click', closeModal);
+    close.addEventListener('click', closeModal(modal));
 
     modal.addEventListener('click', (e)=>{
-    if(e.target == modal || e.target.getAttribute('data-close') == ''){
-        closeModal();
-    }
+        if(e.target == modal || e.target.getAttribute('data-close') == ''){
+            closeModal(modal);
+        }
     });
 
     class MenuCard {
@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', function() {
             `;
             this.parent.append(element);
             element.classList.add('modal_content');
-            openModal();
+            openModal(modal);
         }
     }
    
@@ -167,7 +167,7 @@ window.addEventListener('DOMContentLoaded', function() {
     };
 
     for (let i = 0; i < btns.length; i++) {
-    btns[i].onclick = handler;
+        btns[i].onclick = handler;
     }   
 
     // feedback
@@ -178,30 +178,23 @@ window.addEventListener('DOMContentLoaded', function() {
            btn = document.querySelectorAll('.btn');
 
     btn.forEach(i=>{
-        i.addEventListener('click', openFeedback);
+        i.addEventListener('click', () =>{
+            openModal(feedbackWindow);
+            createFeedbackModal();
+        });
     });
     
 
-    feedbackClose.addEventListener('click', closeFeedback);
+    feedbackClose.addEventListener('click',()=>{
+        closeModal(feedbackWindow);
+    });
     
     feedbackWindow.addEventListener('click', (e)=>{
         if(e.target == feedbackWindow || e.target.getAttribute('data-close') == ''){
-           closeFeedback();
+           closeModal(feedbackWindow);
         }
     });
-    
-
-    function openFeedback (){
-        feedbackWindow.classList.remove('hide');
-        feedbackWindow.classList.add('show');
-        createFeedbackModal();
-    }
         
-    function closeFeedback(){
-        feedbackWindow.classList.add('hide');
-        feedbackWindow.classList.remove('show');
-    }
-    
     function createFeedbackModal (){
         element.innerHTML = `
             <form action="#">
@@ -214,4 +207,43 @@ window.addEventListener('DOMContentLoaded', function() {
         wrapper.append(element);
         element.classList.add('feedback_content');
     }
+
+    // slick slider
+
+      $('.friends_list').slick({
+            speed: 1000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            focusOnSelect: false,
+            prevArrow:`
+            <button type="button" class="friends_button friends_prev">
+                <div class="friends_arrow">
+                    <img src="assets/icons/Arrow.svg" alt="arrow" >
+                </div>
+            </button>
+            `,
+            nextArrow:`
+            
+            <button type="button" class="friends_button friends_next ">
+                <div class="friends_arrow"><img src="assets/icons/Arrow (1).svg" alt=""></div>
+            </button>
+            `,
+        responsive: [
+          {
+            breakpoint: 1279,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    // });  
 });
