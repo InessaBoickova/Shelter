@@ -181,7 +181,42 @@ window.addEventListener('DOMContentLoaded', function() {
 
     for (let i = 0; i < btns.length; i++) {
        btns[i].onclick = handler;
-    }            
+    }           
+    
+    // slick slider
+
+    $('.friends_list').slick({
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        focusOnSelect: false,
+        rows:2,
+        prevArrow:`
+        <button class="friends_arrow friends_inner" type="button">
+            <img src="assets/icons/Arrow.svg" alt="arrow" class="friends_icon">
+        </button>
+        `,
+        nextArrow:`
+        <button class="friends_arrow friends_arr" type="button">
+            <img src="assets/icons/Arrow (1).svg" alt="arrow" class="friends_icon">
+        </button>
+        `,
+        responsive: [{
+            breakpoint: 1279,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+         }
+        ]
+    });
 });
 
 

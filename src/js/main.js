@@ -245,5 +245,4 @@ window.addEventListener('DOMContentLoaded', function() {
           }
         ]
       });
-    // });  
 });

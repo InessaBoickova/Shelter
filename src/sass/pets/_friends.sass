@@ -1,7 +1,9 @@
 .friends
-    padding: 5.04rem 0 2.5rem 0
+    position: relative
+    padding: 5rem 0 1rem 0
     background: #F6F6F6
     &_title
+        margin-bottom: 2rem
         font-family: $font_georgia
         font-weight: normal
         font-size: 2.19rem
@@ -9,25 +11,28 @@
         letter-spacing: 0.06em
         color: #545454
         text-align: center
+    &_item
+        padding: 3.5rem 3rem 0.1rem 3rem
+    &_bottom
+        padding-bottom: 4rem
     &_list
-        margin-top: 3.75rem
-        display: grid
-        gap: 1.875rem 2.5rem
-        grid-template-columns: repeat(4, 16.875rem)
-        grid-template-rows: repeat(2 , 27.187rem)
-        grid-auto-row: 27.187rem
-    &_mt
-        margin-top: 1.875rem
+        padding: 0rem 2rem 0 2rem
+        width: 70rem
+        margin: 0 auto
+    .slick-slide
+        outline: none
+        img
+            width: 100%
     &_wrapper
-        max-width: 16.9rem
-        max-height: 27.2rem
+        width: 16.9rem
+        height: 27.2rem
         background: #FAFAFA
         border-radius: 9px
         transition: 0.1s
         cursor: pointer
         &:hover
             transform: scale(1.05)
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+            box-shadow: 0 18px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
     &_subtitle
         margin-top: 1.61rem
         font-family: $font_georgia
@@ -56,7 +61,6 @@
         outline: none
         &:hover
             background: #FDDCC4
-            border-color: #FDDCC4
     &_button
         display: flex
         justify-content: space-between
@@ -64,29 +68,24 @@
         margin: 3.75rem auto
         width: 21.37rem
         transition: 0.1s
-        & button:nth-child(n+3)
-            border: 2px solid #F1CDB3
-        & button:nth-child(n+3):hover
-            background: #FDDCC4
-            border: none
-        & button:nth-child(n+3):active
-            background: #F1CDB3
-            border: none
     &_arrow
-        background-color: #F6F6F6
+        position: absolute
         width: 3.25rem
         height: 3.25rem
+        border: 2px solid #F1CDB3
+        background: #fff
         border-radius: 6.25rem
         text-align: center
         cursor: pointer
         border-style: solid
         transition: 0.1s
         outline: none
-    &_one
-        margin-top: -7px
-        font-family: $font_georgia
-        font-weight: 400
-        font-size: 1.25rem
-        line-height: 115%
-        letter-spacing: 0.06em
-        color: #292929
+    &_arr
+        top: 28.125rem
+        right: -3.75rem
+    &_inner
+        top: 28.125rem
+        left: -3.75rem
+    &_icon
+        display: block
+        margin: 7px auto
