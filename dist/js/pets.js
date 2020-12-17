@@ -41,17 +41,17 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     class MenuCard {
-        constructor (src,alt,title, subtitle ,descr,parent,age,inoculations, diseases,parasites){
+        constructor (src,alt,title, subtitle ,descr,age,inoculations, diseases,parasites,parent){
             this.src = src;
             this.alt = alt;
             this.title = title;
             this.subtitle = subtitle;
             this.descr = descr;
-            this.parent = document.querySelector('.modal .modal_dialog');
             this.age = age;
             this.inoculations = inoculations;
             this.diseases =diseases;
             this.parasites =parasites;
+            this.parent = document.querySelector(parent);
         }
 
         render(){
@@ -89,6 +89,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 "none",
                 "none",
                 "none",
+                '.modal_dialog'
             ).render();
         }else if (index === 1){
             new MenuCard(
@@ -97,10 +98,11 @@ window.addEventListener('DOMContentLoaded', function() {
                 "Jennifer",
                 "Dog -Labrador",
                 "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
-                "3 months",
+                "2 months",
                 "none",
                 "none",
                 "none",
+                '.modal_dialog'
             ).render();
         }else if (index === 2){
             new MenuCard(
@@ -113,6 +115,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 "none",
                 "none",
                 "none",
+                '.modal_dialog'
             ).render();
         }else if (index === 3){
             new MenuCard(
@@ -125,6 +128,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 "none",
                 "none",
                 "none",
+                '.modal_dialog'
             ).render();
         }else if (index === 4){
             new MenuCard(
@@ -137,6 +141,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 "none",
                 "none",
                 "none",
+                '.modal_dialog'
             ).render();
         }else if (index === 5){
             new MenuCard(
@@ -149,6 +154,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 "none",
                 "none",
                 "none",
+                '.modal_dialog'
             ).render();
         }else if (index === 6){
             new MenuCard(
@@ -161,6 +167,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 "none",
                 "none",
                 "none",
+                '.modal_dialog'
             ).render();
         }else if (index === 7){
             new MenuCard(
@@ -173,6 +180,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 "none",
                 "none",
                 "none",
+                '.modal_dialog'
             ).render();
         }else {
             return;
