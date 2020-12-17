@@ -200,12 +200,12 @@ window.addEventListener('DOMContentLoaded', function() {
         focusOnSelect: false,
         rows:2,
         prevArrow:`
-        <button class="friends_arrow friends_inner" type="button">
+        <button class="friends_arrow friends_prev" type="button">
             <img src="assets/icons/Arrow.svg" alt="arrow" class="friends_icon">
         </button>
         `,
         nextArrow:`
-        <button class="friends_arrow friends_arr" type="button">
+        <button class="friends_arrow friends_next" type="button">
             <img src="assets/icons/Arrow (1).svg" alt="arrow" class="friends_icon">
         </button>
         `,
@@ -219,11 +219,10 @@ window.addEventListener('DOMContentLoaded', function() {
         {
             breakpoint: 767,
             settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
-         }
-        ]
+         }]
     });
 });
 

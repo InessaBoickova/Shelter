@@ -16,9 +16,9 @@
     &_bottom
         padding-bottom: 4rem
     &_list
+        margin: 0 auto
         padding: 0rem 2rem 0 2rem
         width: 70rem
-        margin: 0 auto
     .slick-slide
         outline: none
         img
@@ -61,6 +61,7 @@
         outline: none
         &:hover
             background: #FDDCC4
+            border-color: #FDDCC4
     &_button
         display: flex
         justify-content: space-between
@@ -80,10 +81,13 @@
         border-style: solid
         transition: 0.1s
         outline: none
-    &_arr
+        &:hover
+            background: #FDDCC4
+            border-color: #FDDCC4
+    &_next
         top: 28.125rem
         right: -3.75rem
-    &_inner
+    &_prev
         top: 28.125rem
         left: -3.75rem
     &_icon

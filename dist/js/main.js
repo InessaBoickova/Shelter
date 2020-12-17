@@ -230,13 +230,11 @@ window.addEventListener('DOMContentLoaded', function() {
             </button>
             `,
             nextArrow:`
-            
             <button type="button" class="friends_button friends_next ">
                 <div class="friends_arrow"><img src="assets/icons/Arrow (1).svg" alt=""></div>
             </button>
             `,
-        responsive: [
-          {
+        responsive: [{
             breakpoint: 1279,
             settings: {
               slidesToShow: 2,
@@ -246,10 +244,9 @@ window.addEventListener('DOMContentLoaded', function() {
           {
             breakpoint: 767,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
-          }
-        ]
+          }]
       });
 });
